@@ -11,11 +11,23 @@
             <header class='header'>
                 <h1 class='header-logo'>Air Slingshot</h1>
             </div>
-            <div class="content">
-
+            <h2>Enter your email to view your resevertion!</h2>
+            <div id='content' class="content">
+                <form id="seats" class="content" name="salesForm" onsubmit="viewReservation(event)">
+                    <div class="form-content user">
+                    <div class='form-item'>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="Your email" required />
+                </div>
+                <button class='button confirm' id='confirm-button' >
+                    <div class="lds-dual-ring"></div>
+                    Join the Fun!<span id="seat-number"></span>
+                </button>
+            </div> 
+            </form>
             </div>
         </div>
-        <p class='footer-logo'>The only way to fly!</p>
+        <p class='footer-logo'>Make it sling hot shot!</p>
         <script src="./js/view-reservation.js"></script>
     </body>
 </html>
